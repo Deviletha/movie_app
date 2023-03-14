@@ -72,9 +72,6 @@ class _HomeState extends State<Home> {
           TrendingMovies(
             trending: trendingmovies,
           ),
-          // TopRatedMovies(
-          //   toprated: topratedmovies,
-          // ),
         ],
       ),
     );

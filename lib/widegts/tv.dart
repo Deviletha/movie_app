@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../utils/text.dart';
 
 class TV extends StatelessWidget {
@@ -19,7 +18,6 @@ class TV extends StatelessWidget {
           ),
           SizedBox(height: 10),
           Container(
-            // color: Colors.red,
               height: 200,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -27,7 +25,6 @@ class TV extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Container(
                       padding: EdgeInsets.all(5),
-                      // color: Colors.green,
                       width: 250,
                       child: Column(
                         children: [
@@ -36,7 +33,7 @@ class TV extends StatelessWidget {
                               borderRadius: BorderRadius.circular(10),
                               image: DecorationImage(
                                   image: NetworkImage(
-                                      'https://image.tmdb.org/t/p/w500' +
+                                      'https://image.tmdb.org/t/p/w500'+
                                           tv[index]['backdrop_path']),
                                   fit: BoxFit.cover),
                             ),
