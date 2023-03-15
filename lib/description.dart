@@ -28,7 +28,7 @@ class Description extends StatelessWidget {
                   Positioned(child: Container(
                     height: 250,
                     width: MediaQuery.of(context).size.width,
-                    child: Image.network(bannerurl ?? '', fit: BoxFit.cover,),
+                    child: Image.network(bannerurl , fit: BoxFit.cover,),
                   )),
                   Positioned(
                       bottom: 10,
@@ -40,7 +40,7 @@ class Description extends StatelessWidget {
             Container(
                 padding: EdgeInsets.all(10),
                 child: modified_text(
-                    text: name != null ? name : 'Not Loaded', size: 24)),
+                    text: name, size: 24)),
             Container(
                 padding: EdgeInsets.only(left: 10),
                 child:
@@ -50,8 +50,7 @@ class Description extends StatelessWidget {
                 Container(
                   height: 200,
                   width: 100,
-                  child: Image.network(posterurl!),
-                ),
+                  child: Image.network(posterurl),),
                 Flexible(
                   child: Container(
                       padding: EdgeInsets.all(10),

@@ -32,9 +32,9 @@ class TV extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               image: DecorationImage(
-                                  image: NetworkImage(
+                                  image: tv[index]['backdrop_path'] !=null ? NetworkImage(
                                       'https://image.tmdb.org/t/p/w500'+
-                                          tv[index]['backdrop_path']),
+                                          tv[index]['backdrop_path']) : NetworkImage('https://thumbs.dreamstime.com/z/error-sign-error-message-white-background-error-sign-error-message-simple-vector-icon-125098995.jpg'),
                                   fit: BoxFit.cover),
                             ),
                             height: 140,
